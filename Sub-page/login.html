@@ -5,25 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="box-sizing: border-box;background-color: #514d4d;">
+<body style="box-sizing: border-box;background-color: #232222; font-family: 'Inter';">
     
+    
+<nav style="background-color: black;">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-7">
+      <a href="https://flowbite.com/" class="flex items-center">
+          <span class="self-center text-2xl font-bold whitespace-nowrap text-white">Musikku</span>
+      </a>
+    </div>
+  </nav>
+  
+
     <section>
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto my-auto md:h-screen lg:py-0">
-            <div class="w-full bg-black rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                    <h1 class="text-xl font-bold leading-tight text-white tracking-tight text-gray-900 md:text-2xl dark:text-white text-center">
+            <div class="w-full bg-black rounded-lg shadow dark:border md:mt-0 sm:max-w-3xl xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8 md:px-26 lg:px-52 md:py-26 lg:py-20">
+                    <h1 class="text-xl font-semibold leading-tight text-white tracking-tight text-gray-900 md:text-2xl lg:text-4xl dark:text-white text-center">
                         Log In to Musikku
                     </h1>
                     <form class="space-y-4 md:space-y-6" action="#">
                         <div>
                             <label for="email" class="block mb-2 text-sm text-white font-medium text-gray-900 dark:text-white">Email or Username</label>
-                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email or Username" required="">
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email or Username" required="" style="background-color: #232222;">
                         </div>
                         <div>
                             <label for="password" class="block mb-2 text-sm text-white font-medium text-gray-900 dark:text-white">Password</label>
-                            <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                            <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="" style="background-color: #232222;">
                         </div>
                         <div class="flex items-center justify-between">
                             <div class="flex items-start">
@@ -34,11 +47,11 @@
                                   <label for="remember" class="text-white">Remember me</label>
                                 </div>
                             </div>
-                            <a href="#" class="text-sm font-medium text-white underline text-center">Forgot password?</a>
                         </div>
-                        <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
-                        <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Don’t have an account yet? <a href="#" class="font-medium text-primary-600 underline dark:text-primary-500">Sign up</a>
+                        <button type="submit" class="w-full text-blsck font-semibold rounded-full text-sm px-5 py-3 text-center" style="background-color: #45aafa;">Log in</button>
+                        <p  class="text-sm font-medium text-white underline text-center"><a href="#">Forgot your password?</a></p>
+                        <p class="text-sm font-light text-center text-gray-400">
+                            Don’t have an account yet? <a href="#" class="font-medium underline text-white">Sign up for Musikku</a>
                         </p>
                     </form>
                 </div>
